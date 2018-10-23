@@ -14,7 +14,7 @@ FFmpeg and Python 3 are required.
 ### Intended Users
 
 Vloggers and other video makers who shoot with a fixed camera (e.g. webcam or from a tripod), and:
-- video is one long continuos recording
+- video is one long continuous recording
 - some time is spent outside the frame
 - video would be better split into separate clips
 
@@ -43,7 +43,7 @@ All parameters can be adjusted near the top of the script file.
 
 ### Issue
 
-FFmpeg's scene detection algorithm compares a frame with the previous selected frame. This requires a high degree of continuous motion, and an undiserably cut-off happens may happen if the subject is relatively motionless. FDCM compensates for this by ignoring a cut-off if there's less than 5.9 seconds to motion is detected again.
+FFmpeg's scene detection algorithm compares a frame with the previous selected frame. This requires a high degree of continuous motion, and an undesirable cut-off may happen if the subject is relatively motionless. FDCM compensates for this by ignoring a cut-off if there's less than 5.9 seconds to motion is detected again.
 
 Ideally the motionless periods with the subject outside the frame should be even longer. If your raw videos have such long breaks, increase the `min_copy_break_s` parameter accordingly.
 
@@ -52,7 +52,7 @@ If I were to make a new project I'd experiment with OpenCV, and have it compare 
 ### Related Projects
 
 - [FFmpeg Motion Binary Sensor](https://www.home-assistant.io/components/binary_sensor.ffmpeg_motion/)
--- I discovered this one after I made this script. TODO: Test speed/accuray vs my script
+-- I discovered this one after I made this script. TODO: Test speed/accuracy vs my script
 - [Basic motion detection and tracking with Python and OpenCV](https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
 -- To download code you must submit email address, but I did and they did email me legit code
 -- Uses OpenCV to visualize motion. Promisising approach. A good starting point for a similar (and possibly better) script
