@@ -25,7 +25,7 @@ Vloggers and other video makers who shoot with a fixed camera (e.g. webcam or fr
 - Run the script. No arguments are needed.
 - Take a coffee break...
 - Watch the output clips. Delete false positives (e.g. triggered by shadows) and make sure no clip starts too late or ends too early.
--- If so, consider deleting all output files, adjust parameters in the script file and run again. Or simply edit out this part manually.
+ - If so, consider deleting all output files, adjust parameters in the script file and run again. Or simply edit out this part manually.
 - When output clips are fine, copy them over to your video project's folder. Raw files can be deleted.
 
 ### Under the Hood
@@ -52,12 +52,12 @@ If I were to make a new project I'd experiment with OpenCV, and have it compare 
 ### Related Projects
 
 - [FFmpeg Motion Binary Sensor](https://www.home-assistant.io/components/binary_sensor.ffmpeg_motion/)
--- I discovered this one after I made this script. TODO: Test speed/accuracy vs my script
+ - I discovered this one after I made this script. TODO: Test speed/accuracy vs my script
 - [Basic motion detection and tracking with Python and OpenCV](https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
--- To download code you must submit email address, but I did and they did email me legit code
--- Uses OpenCV to visualize motion. Promisising approach. A good starting point for a similar (and possibly better) script
+ - To download code you must submit email address, but I did and they did email me legit code
+ - Uses OpenCV to visualize motion. Promisising approach. A good starting point for a similar (and possibly better) script
 - [PySceneDetect](https://pyscenedetect.readthedocs.io/en/latest/)
--- Command line tool. Accurate result but oo slow for my liking. Perhaps I missed some parameter to speed it up?
+ - Command line tool. Accurate result but oo slow for my liking. Perhaps I missed some parameter to speed it up?
 
 ### MIT License
 
