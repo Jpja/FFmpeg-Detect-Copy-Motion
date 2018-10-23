@@ -25,7 +25,7 @@ Vloggers and other video makers who shoot with a fixed camera (e.g. webcam or fr
 - Run the script. No arguments are needed.
 - Take a coffee break...
 - Watch the output clips. Delete false positives (e.g. triggered by shadows) and make sure no clip starts too late or ends too early.
- - If so, consider deleting all output files, adjust parameters in the script file and run again. Or simply edit out this part manually.
+-* If so, consider deleting all output files, adjust parameters in the script file and run again. Or simply edit out this part manually.
 - When output clips are fine, copy them over to your video project's folder. Raw files can be deleted.
 
 ### Under the Hood
