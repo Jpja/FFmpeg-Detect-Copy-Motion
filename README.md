@@ -11,6 +11,8 @@ The extracted files are lossless copies from the input file bitstream.
 
 FFmpeg and Python 3 are required.
 
+Video walkthrough: https://youtu.be/I6xyNpRD_JY
+
 ### Intended Users
 
 Vloggers and other video makers who shoot with a fixed camera (e.g. webcam or from a tripod), and:
