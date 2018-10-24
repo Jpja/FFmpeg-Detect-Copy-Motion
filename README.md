@@ -51,8 +51,6 @@ If I were to make a new project I'd experiment with OpenCV, and have it compare 
 
 ### Related Projects
 
-- [FFmpeg Motion Binary Sensor](https://www.home-assistant.io/components/binary_sensor.ffmpeg_motion/)
-   - I discovered this one after I made this script. TODO: Test speed/accuracy vs my script
 - [Basic motion detection and tracking with Python and OpenCV](https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
    - To download code you must submit email address, but I did and they did email me legit code
    - Uses OpenCV to visualize motion. Promisising approach. A good starting point for a similar (and possibly better) script
