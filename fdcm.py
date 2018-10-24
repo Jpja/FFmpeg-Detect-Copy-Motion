@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+#Github: https://github.com/Jpja/FFmpeg-Detect-Copy-Motion
+#Video walkthrough: https://youtu.be/I6xyNpRD_JY
+
 #basic parameters
 before_s = 2.5 #start copying video N seconds before motion is triggered  
 after_s = 2 #end copying video N seconds after motion has ended
