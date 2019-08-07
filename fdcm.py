@@ -80,8 +80,10 @@ os.chdir(dname)
 
 #find all video files
 input_files = []
-for x in range(len(file_formats)):
-	for file in glob.glob('*.'+file_formats[x]):
+for file in glob.glob('*.*'):
+	_, file_extension = os.path.splitext(file)
+	file_format = file_extension.split('.')[-1]
+	if file_format.upper() in file_formats:
 		input_files.append(file)
 input_files = sorted(input_files, key=str.lower)
 print("Input files:")
