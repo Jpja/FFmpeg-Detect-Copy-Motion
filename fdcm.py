@@ -9,7 +9,7 @@ after_s = 2 #end copying video N seconds after motion has ended
 min_copy_break_s = 5.9 #dont stop copying if next motion trigger sooner than this
 ignore_start_s = 2 #seconds dont search for motion in beginning of input file
 ignore_end_s = 2 #seconds dont search for motion at end of input file
-generate_ouput_files = True #set to False if you only want to read logs
+generate_output_files = True #set to False if you only want to read logs
 delete_input_files = False #DANGEROUS, use only if you have COPIES of input files
 file_formats = ['MP4', 'M4P', 'M4B', 'M4R', 'M4V', 'M4A', 'DIVX', 'EVO', 'F4V', 'FLV', 'AVI', 'QT', 'MXF', 'MOV', 'MTS', 'M2TS', 'MPEG', 'VOB', 'IFO']
 
@@ -308,7 +308,7 @@ for input_file in input_files:
 		clip_length = copy_end_s[x] - copy_start_s[x]
 		command = 'ffmpeg -loglevel '+str(ffmpeg_loglevel)+' -ss ' + '%.4f'%(copy_start_s[x]) + ' -i \"'+input_file+'\" -t ' + '%.4f'%(clip_length) + ' -c copy \"'+out_filename+'\"'
 		print('Run command: ' + command)
-		if generate_ouput_files:
+		if generate_output_files:
 			os.system(command)
 	
 	
