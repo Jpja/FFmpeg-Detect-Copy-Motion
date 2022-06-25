@@ -106,7 +106,7 @@ for input_file in input_files:
 	temp_file = "temp-scenescores-" + str(randint) + ".txt"
 	if os.path.isfile(temp_file):
 		os.remove(temp_file)
-	command = "ffmpeg -loglevel "+str(ffmpeg_loglevel)+ " -i \""+input_file+"\" -vf select='not(mod(n\,"+str(step_len_f)+"))',select='gte(scene,0)',metadata=print:file="+temp_file+" -an -f null -"
+	command = "ffmpeg -loglevel "+str(ffmpeg_loglevel)+ " -i \""+input_file+"\" -vf select='not(mod(n\,"+str(step_len_f)+"))',select='gte(scene\,0)',metadata=print:file="+temp_file+" -an -f null -"
 	print('Run command: ' + command)	
 	os.system(command)
 
